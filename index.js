@@ -6,8 +6,6 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const SOME = process.env.TEST_VAR;
 
-console.log('PORT IS:', process.env.PORT);
-console.log('TEST_VAR:', SOME);
 app.use(cors());
 app.use(express.json());
 app.use(express.static('build'));
@@ -113,6 +111,6 @@ const unknownEndpoint = (request, response) => {
 
 app.use(unknownEndpoint);
 
-app.listen(3001, () => {
-  console.log(`Server is running on ${3001}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on ${PORT}`);
 });
