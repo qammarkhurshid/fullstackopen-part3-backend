@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf build && cd E:\\Workspace\\fullstack-open\\part-2\\2.6-2.11_2.15-2.20_phonebook && npm run build && cp -r build E:\\Workspace\\fullstackopen-part3-backend"
+    "build:ui": "rm -rf build && cd E:\\Workspace\\fullstack-open\\part-2\\2.6-2.11_2.15-2.20_phonebook && npm run build && cp -r build E:\\Workspace\\fullstackopen-part3-backend",
+    "deploy": "git add . && git commit -m \"Deployment build\" && git push"
   },
   "repository": {
     "type": "git",
