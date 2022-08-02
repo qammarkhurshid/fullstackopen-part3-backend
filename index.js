@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-console.log('PORT IS:', PORT);
+console.log('PORT IS:', process.env.PORT);
 app.use(cors());
 app.use(express.json());
 app.use(express.static('build'));
