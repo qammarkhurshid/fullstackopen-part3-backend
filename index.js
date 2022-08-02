@@ -113,6 +113,6 @@ const unknownEndpoint = (request, response) => {
 
 app.use(unknownEndpoint);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on ${PORT}`);
+app.listen(3001, () => {
+  console.log(`Server is running on ${3001}`);
 });
